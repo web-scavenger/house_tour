@@ -1,0 +1,71 @@
+{
+    "imageData": [
+        {
+            "id": "0",
+            "leftImageSrc": "../img/left_eye/KitchenLivingAreaVR05_l.jpg",
+            "rightImageSrc" : "../img/right_eye/KitchenLivingAreaVR05_r.jpg",
+            "room_links": [
+                {
+                    "room_id": "1",
+                    "x": "77.75",
+                    "y": "-220.30",
+                    "z": "-4987.27"
+                },
+                {
+                    "room_id": "3",
+                    "x": "-3728.89",
+                    "y": "-86.06",
+                    "z": "3324.02"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "leftImageSrc": "../img/left_eye/BEDroomVR01_l.jpg",
+            "rightImageSrc" : "../img/right_eye/BEDroomVR01_r.jpg",
+            "room_links": [
+                {
+                    "room_id":"2",
+                    "x": "-4941.23",
+                    "y": "-220.35",
+                    "z": "665.51"
+                },
+                {
+                    "room_id":"0",
+                    "x": "641.22",
+                    "y": "245.86",
+                    "z": "4944.06"
+                }
+            ]
+        }
+        ,
+        {
+            "id": "2",
+            "leftImageSrc": "../img/left_eye/Bathroom1 VR02_l.jpg",
+            "rightImageSrc" : "../img/right_eye/Bathroom1 VR02_r.jpg",
+            "room_links": [
+                {
+                    "room_id":"1",
+                    "x": "-2768.74",
+                    "y": "1031.86",
+                    "z": "4023.17"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "leftImageSrc": "../img/left_eye/Bathroom2 VR01_l.jpg",
+            "rightImageSrc" : "../img/right_eye/Bathroom2 VR01_r.jpg",
+            "room_links": [
+                {
+                    "room_id":"0",
+                    "x": "3563.91",
+                    "y": "30.70",
+                    "z": "3495.76"
+                }
+            ]
+        }
+        
+    ]
+    
+}

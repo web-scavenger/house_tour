@@ -3,31 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1.8">
 
 </head>
 
 <body>
-
+    
+    
 
     <div id="left_canvas">
-        <div class="preloader_hidden_block" id='js-preloader_left'><img src="img/spinner.gif" alt=""></div>
+        <div class="preloader_block" id='js-preloader_left'><img src="img/spinner.gif?v=1.1.8" alt=""><p id="js-percent_left" class="percent"></p></div>
     </div>
     <div id="right_canvas">
-        <div class="preloader_hidden_block" id='js-preloader_right'><img src="img/spinner.gif" alt=""></div>
+        <div class="preloader_block" id='js-preloader_right'><img src="img/spinner.gif?v=1.1.8" alt=""><p id="js-percent_right" class="percent"></p></div>
     </div>
-    <script src="./js/three.min.js"></script>
-    <script src="./js/palonels.min.js"></script>
+    
     <div id="progress"></div>
     <div class="mobile__touchBLock" id='js-mobile__touchBLock'></div>
     <div class="control-btn" id="js-control-btn">
         <div class="mode__img" id="vrmode__img">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <path style="fill: #ffffff;" d="M357.1,229.8c-5.1,3.7-12.3,5.5-21.7,5.5h-32.8v-46.2h32.8c9.3,0,16.5,1.7,21.7,5.1c5.1,3.4,7.7,9.3,7.7,17.6
+                <path class="svg" d="M357.1,229.8c-5.1,3.7-12.3,5.5-21.7,5.5h-32.8v-46.2h32.8c9.3,0,16.5,1.7,21.7,5.1c5.1,3.4,7.7,9.3,7.7,17.6
            C364.8,220.1,362.2,226.1,357.1,229.8z M503.6,144.2v149.9l-0.6,8.6c-4.5,37.8-36.3,63.7-74.8,66.6l-89.4,6.7
            c-1.1,0.1-2.2,0.1-3.4,0.1c-17.6,0-36.8-9.9-44.8-23.5l-15.1-20.1c-4.6-7.8-11.7-12.3-19.6-12.3c-7.9,0-15,4.5-19.6,12.3l-15.1,20.1
            c-8.5,14.5-29.7,24.8-48.2,23.4l-89.4-6.7c-38.5-2.9-70.3-28.8-74.8-66.6l-0.6-8.6V144.2c0-5,4.1-9.1,9.1-9.1h72.5h404.6
@@ -44,7 +44,7 @@
         <div class="mode__img" id="panomode__img">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <path style="fill: #ffffff;" d="M498.8,110.3c-2.1-1.5-4.7-1.9-7.2-1.1c-76.4,24.8-155.9,37.4-236.2,37.4S95.6,134,19.2,109.2c-2.4-0.8-5.1-0.4-7.2,1.1
+                <path class="svg" d="M498.8,110.3c-2.1-1.5-4.7-1.9-7.2-1.1c-76.4,24.8-155.9,37.4-236.2,37.4S95.6,134,19.2,109.2c-2.4-0.8-5.1-0.4-7.2,1.1
                c-2.1,1.5-3.3,3.9-3.3,6.5V394c0,2.6,1.2,5,3.3,6.5c2.1,1.5,4.7,1.9,7.2,1.1c76.4-24.8,155.9-37.4,236.2-37.4s159.8,12.6,236.2,37.4
                c0.8,0.3,1.6,0.4,2.5,0.4c1.7,0,3.3-0.5,4.7-1.5c2.1-1.5,3.3-3.9,3.3-6.5V116.8C502.1,114.2,500.9,111.8,498.8,110.3z M363.2,185.8
                c17.1,0,31.1,13.9,31.1,31.1S380.3,248,363.2,248c-17.1,0-31.1-13.9-31.1-31.1S346,185.8,363.2,185.8z M471.3,348.4
@@ -61,7 +61,10 @@
             </svg>
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="./js/three.min.js?v=1.1.8"></script>
+    <script src="./js/palonels.min.js?v=1.1.8"></script>
+    <!-- <script src="js/data.json"></script> -->
+    <script src="js/main.js?v=1.1.8"></script>
     <script>
         window.onload = function () {
             panoramicTour.initScreenMode()
